@@ -1,0 +1,18 @@
+<%- include("layout/header") %>
+<link rel="stylesheet" href="css/style.css">
+<main>
+    <form action="" method="post">
+        <input type="text" name="language" id="">
+        <input type="submit" value="Save">
+    </form>
+    <ul>
+        <% if(languages.length > 0){ %>
+            <% for(let x=0; x < languages.length; x++){ %>
+                <li> <%= languages[x] %> </li>
+            <% } %>
+        <% }else{ %>
+            <p>Data not pound.</p>
+        <% } %>
+    </ul>
+</main>
+<%- include("layout/footer") %>
